@@ -1,0 +1,31 @@
+<!--Kevin flanagan G00228079-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Movie App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-image" class="background">     <!--calling the image-->
+
+  <B>Use the search box to search for movies!</B>
+
+    <ion-input type="text" [(ngModel)]="newTitle"></ion-input>
+    {{newTitle}}
+    <button ion-button block color="green" (click)="changeMovie()">Search</button>
+   
+    <!-- <ion-title>Your latest status: {{myStatus}}</ion-title>
+  <button ion-button (click)="updateStatus()">Add to Favorites</button> setting up my favorites page -->
+
+  <ion-list>
+    <ion-item *ngFor="let movie of title">
+     {{movie.Title}},  <!-- prints out the title of the movie -->
+      {{movie.Year}}   <!--prints out the year of release of the movie -->
+
+        <ion-img width="50" height="50" src={{movie.Poster}}></ion-img> <!--displays the poster of the movie -->
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+

@@ -1,0 +1,41 @@
+<ion-content class="background">
+
+  <ion-card>
+    <ion-card-header>
+      LOGIN
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines><!--No lines in the login-->
+        <ion-item>
+          <ion-label floating>Username</ion-label><!-- username to be entered here -->
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password</ion-label><!-- password to be entered here -->
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <p>Forgot Password ? <a>Get Your password</a></p> <!-- option to reset password im not 
+           going to set this up but the frame work is there --> 
+        </ion-item>
+        <button ion-button block color="danger">Login</button>
+      </ion-list>
+      <b>OR</b>
+      <ion-row>
+        <ion-col>
+          <button ion-button block color="blue">
+        <ion-icon name="logo-facebook"></ion-icon><!-- option to login from facebook -->
+        <div>Login Facebook</div>
+      </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button block color="danger" block><!-- option to login from google -->
+        <ion-icon name="logo-google"></ion-icon>
+        <div>Login Google</div>
+      </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
